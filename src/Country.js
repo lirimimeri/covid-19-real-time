@@ -13,11 +13,16 @@ class Country extends Component {
         return ( 
             <div> 
                 <div>
-                    <img src={this.props.photo} className="photos"/>
+                    <img src={this.props.photo} className="photos"/> <br />
                     
-                        <img src={Death} className="Logo"/>  
-                        <img src={Infected} className="Logo" /> 
-                        <hr/>
+                    <img src={Death} className="Logo"/> 
+                    <h3>{this.props.deaths}</h3>  
+                    <img src={Infected} className="Logo" /> 
+                    <h3>{this.props.infected}</h3>
+                    <h3>Recovered: {this.props.recovered}</h3>
+                    
+                    
+                    <hr/>
                 </div>
             </div>
          );
@@ -25,4 +30,4 @@ class Country extends Component {
 }
 
 
-export default Country; //qetu ja kom bo eksport per me mujt anej me bo inport
+export default Country; 

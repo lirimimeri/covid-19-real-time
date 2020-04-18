@@ -9,8 +9,7 @@ import Albania from './photos/albania.png'
 
 class App extends Component {
   state = { 
-    Albania: [],
-    Kosovo: [],
+    Kosovo: []
    }
     
   componentDidMount() {
@@ -41,7 +40,10 @@ class App extends Component {
     return ( 
       <div>
         <Country 
-        photo={Kosovo} />        
+        photo={Kosovo} 
+        deaths={this.state.Kosovo.deaths}
+        infected={this.state.Kosovo.confirmed}
+        recovered={this.state.Kosovo.recovered}/>        
       </div>
      );
   }
