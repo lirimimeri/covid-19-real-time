@@ -1,0 +1,28 @@
+html {
+    font-family: system-ui, sans-serif;
+
+}
+  
+body {
+    background-color: #fbfbfb;
+}
+  
+
+.Logo { 
+  width: 100px;
+  height: 100px;
+  line-height: 50px;
+  margin: 10px;
+  
+}
+.photos {
+  width: 200px;
+  height: 200px;
+  
+  margin: 10px;
+}
+hr {
+  width: 60%;
+}
+
+  
