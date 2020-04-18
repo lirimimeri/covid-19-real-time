@@ -41,9 +41,7 @@ class App extends Component {
       <div>
         <Country 
         photo={Kosovo} 
-        deaths={this.state.Kosovo.deaths}
-        infected={this.state.Kosovo.confirmed}
-        recovered={this.state.Kosovo.recovered}/>        
+        data={this.state.Kosovo}/>        
       </div>
      );
   }

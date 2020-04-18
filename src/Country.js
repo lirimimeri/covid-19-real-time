@@ -13,13 +13,13 @@ class Country extends Component {
         return ( 
             <div> 
                 <div>
+                    <h5>Last updated: {this.props.data.lastUpdate}</h5>
                     <img src={this.props.photo} className="photos"/> <br />
-                    
                     <img src={Death} className="Logo"/> 
-                    <h3>{this.props.deaths}</h3>  
+                    <h3 style={{display: "inline"}}>{this.props.data.deaths}</h3> <br /> 
                     <img src={Infected} className="Logo" /> 
-                    <h3>{this.props.infected}</h3>
-                    <h3>Recovered: {this.props.recovered}</h3>
+                    <h3 style={{display: "inline"}}>{this.props.data.confirmed}</h3><br />
+                    <h3>Recovered: {this.props.data.recovered}</h3>
                     
                     
                     <hr/>
