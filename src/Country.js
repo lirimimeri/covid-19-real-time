@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class Country extends Component {
     render() { 
         return ( 
-            <div> 
+            <div className="divikryesor"> 
                 <link
              rel="stylesheet"
              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -38,7 +38,7 @@ class Country extends Component {
                 </header>
                 </div>
                 
-                <div>
+                <div className="divi1">
                     <h5>Last updated: {this.props.data.lastUpdate}</h5>
 
                     <img src={Death} alt="Deaths" className="Logo"/> 

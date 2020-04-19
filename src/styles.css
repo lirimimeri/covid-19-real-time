@@ -8,6 +8,21 @@ body {
     background-color: #fbfbfb;
 }
 
+.divi1 {
+  width: 100%;
+  height: 500px;
+  background-image: url(photos/background.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; 
+}
+
+.divikryesor{
+  padding: 0 15% 0 15%;
+}
+
 
 header{
   width: 100%;
