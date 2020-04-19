@@ -4,52 +4,19 @@ import './styles.css'
 import Death from './photos/death.png'
 import Infected from './photos/virus-molecule.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Header'
+import CovidData from './CovidData'
 
 
 
 class Country extends Component {
     render() { 
         return ( 
-            <div className="divikryesor"> 
-                <link
-             rel="stylesheet"
-             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-             crossorigin="anonymous"
+            <div className="divikryesor">                
+                <Header />
+                <CovidData 
+                data={this.props.data}
                 />
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-                <div>
-                <header className="headeri1">
-                <img src={this.props.photo} alt="Kosovo flag" className="logoks"/> <br />
-                <ul class="nav justify-content-center">
-                            <li className="nav-item">
-                                <a className="nav-link active" href="#"><i class="fas fa-home"></i> Ballina</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#"><i class="fa fa-car"></i> Statistika</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#"> <i class="fas fa-home"></i> Keshilla</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                            </ul>
-                </header>
-                </div>
-                
-                <div className="divi1">
-                    <h5>Last updated: {this.props.data.lastUpdate}</h5>
-
-                    <img src={Death} alt="Deaths" className="Logo"/> 
-                    <h3 style={{display: "inline"}}>{this.props.data.deaths}</h3> <br /> 
-                    
-                    <img src={Infected} alt="infected" className="Logo" /> 
-                    <h3 style={{display: "inline"}}>{this.props.data.confirmed}</h3><br />
-                    
-                    <h3>Recovered: {this.props.data.recovered}</h3>                   
-                    <hr/>
-                </div>
             </div>
          );
     }
@@ -57,3 +24,13 @@ class Country extends Component {
 
 
 export default Country; 
+
+{/* <link
+                    rel="stylesheet"
+                    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+                    crossorigin="anonymous"
+                />
+                <link rel="stylesheet" 
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                </link> */}

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Country from './Country' 
 
-import Kosovo from './photos/kosovo.png'
-
-
 
 class App extends Component {
   state = { 
@@ -35,8 +32,7 @@ class App extends Component {
   render() { 
     return ( 
       <div>
-        <Country 
-        photo={Kosovo} 
+        <Country  
         data={this.state.Kosovo}/>        
       </div>
      );
