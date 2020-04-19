@@ -6,10 +6,8 @@ import Infected from './photos/virus-molecule.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-class Country extends Component {
-    state = { 
 
-     }
+class Country extends Component {
     render() { 
         return ( 
             <div> 
