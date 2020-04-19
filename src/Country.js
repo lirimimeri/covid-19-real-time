@@ -5,10 +5,8 @@ import Death from './photos/death.png'
 import Infected from './photos/virus-molecule.png'
 
 
-class Country extends Component {
-    state = { 
 
-     }
+class Country extends Component {
     render() { 
         return ( 
             <div> 
