@@ -9,7 +9,7 @@ class Header extends Component {
         return (
             <div>
                 <header className="headeri1">
-                    <img src={Kosovo} alt="Kosovo flag" className="logoks"/> <br />
+                    <img src={kosovo.png} alt="Kosovo flag" className="logoks"/> <br />
                     <ul class="nav justify-content-center">
                         <li className="nav-item">
                             <a className="nav-link active" href="#"><i class="fas fa-home">
