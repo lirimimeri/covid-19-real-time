@@ -8,13 +8,13 @@ class CovidData extends Component {
     render() { 
         return (  
             <div style={{textAlign: "center"}}>
-                <h5>Last updated: { this.props.isLoading ? <i class="fa fa-spinner"></i> :  this.props.data.lastUpdate}</h5>
+                <h5>Last updated: { this.props.isLoading ? <i class="fas fa-spinner fa-spin"></i> :  this.props.data.lastUpdate}</h5>
                 <div className="row">
                     <div className="col-3">
                         <div className="card">
                             <div className="">
                             <h5 className="card-title" style={{textAlign: "center"}}> Të konfirmuara </h5>
-                            <h4 style={{}}>{this.props.isLoading ? <i class="fa fa-spinner"></i> : this.props.data.confirmed}   
+                            <h4 style={{}}>{this.props.isLoading ? <i class="fas fa-spinner fa-spin"></i> : this.props.data.confirmed}   
                             <i class="fas fa-user-plus" style={{fontSize: "45px"}}></i>    
                             </h4>
                                 {/* fa fa-spinner  loading logo....*/}
@@ -26,7 +26,7 @@ class CovidData extends Component {
                         <div className="card">
                             <div className="">
                             <h5 className="card-title" style={{textAlign: "center"}}> Të shëruar </h5>
-                            <h4 style={{}}>{this.props.isLoading ? <i class="fa fa-spinner"></i> : this.props.data.recovered}   <i class="far fa-smile-beam" style={{fontSize: "45px"}}></i>    </h4>
+                            <h4 style={{}}>{this.props.isLoading ? <i class="fas fa-spinner fa-spin"></i> : this.props.data.recovered}   <i class="far fa-smile-beam" style={{fontSize: "45px"}}></i>    </h4>
                             </div>
                         </div>
                     </div>
