@@ -36,8 +36,13 @@ class Country extends Component {
                             </ul>
                 </header>
                 </div>
+
+                
                 
                 <div className="divi1">
+
+                    
+                    
                     <h5>Last updated: {this.props.data.lastUpdate}</h5>
 
                     <img src={Death} alt="Deaths" className="Logo"/> 
@@ -48,6 +53,8 @@ class Country extends Component {
                     
                     <h3>Recovered: {this.props.data.recovered}</h3>                   
                 </div>
+             
+
             </div>
          );
     }
