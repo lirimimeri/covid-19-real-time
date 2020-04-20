@@ -4,6 +4,8 @@ import './styles.css'
 import Death from './photos/death.png'
 import Infected from './photos/virus-molecule.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Header';
+import CovidData from './CovidData';
 
 
 
@@ -20,6 +22,7 @@ class Country extends Component {
                 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></link>
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"></link>
 
+<<<<<<< HEAD
                 <div>
                 <header className="headeri1">
                 <img src={this.props.photo} alt="Kosovo flag" className="logoks"/> <br />
@@ -55,6 +58,13 @@ class Country extends Component {
                 </div>
              
 
+=======
+                
+                <Header />
+                
+                <CovidData data={this.props.data}/>
+                
+>>>>>>> fbbd8c35270170aefa3fbff1969dae433b5ed3fa
             </div>
          );
     }
