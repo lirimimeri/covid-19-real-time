@@ -12,16 +12,15 @@ class Header extends Component {
                     <img src={Kosovo} alt="Kosovo flag" className="logoks"/> <br />
                     <ul class="nav justify-content-center">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#"><i class="fas fa-home">
-                            </i> Ballina</a>
+                            <a className="nav-link active" href="#"><i class="fas fa-home"></i> Ballina</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">
-                                <i class="fa fa-car"></i> Statistika</a>
+                            <i class="far fa-chart-bar"></i> Statistika</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#"> 
-                            <i class="fas fa-home"></i> Keshilla</a>
+                            <i class="fas fa-comment-medical"></i> Keshilla</a>
                         </li>
                     </ul>
                 </header>
