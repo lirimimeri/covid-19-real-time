@@ -4,7 +4,8 @@ import Country from './Country'
 
 class App extends Component {
   state = { 
-    Kosovo: []
+    Kosovo: [],
+    isLoading: true
    }
     
   componentDidMount() {
@@ -20,6 +21,8 @@ class App extends Component {
     .then(data => {
       this.setState({ Kosovo: data.data.covid19Stats[0]})
       console.log(this.state.Kosovo)
+      this.setState({ isLoading: false })
+      console.log(this.state.isLoading)
     })
     .catch(err => {
 	  console.log(err);
@@ -33,7 +36,8 @@ class App extends Component {
     return ( 
       <div>
         <Country  
-        data={this.state.Kosovo}/>        
+        data={this.state.Kosovo}
+        isLoading={this.state.isLoading}/>        
       </div>
      );
   }

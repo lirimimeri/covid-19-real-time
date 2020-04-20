@@ -24,7 +24,9 @@ class Country extends Component {
 
                 <Header />
 
-                <CovidData data={this.props.data}/>
+                <CovidData 
+                data={this.props.data}
+                isLoading={this.props.isLoading}/>
                 
                 
              
