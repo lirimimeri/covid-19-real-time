@@ -35,7 +35,7 @@ class CovidData extends Component {
                         <div className="card">
                             <div className="">
                             <h5 className="card-title" style={{textAlign: "center"}}> Të vdekur </h5>
-                            <h4 style={{}}>{ this.props.isLoading ? <i class="fa fa-spinner"/> : this.props.data.deaths}   <i class="fas fa-skull-crossbones" style={{fontSize: "45px"}}></i>    </h4>
+                            <h4 style={{}}>{ this.props.isLoading ? <i className="fas fa-spinner fa-spin"/> : this.props.data.deaths}   <i class="fas fa-skull-crossbones" style={{fontSize: "45px"}}></i>    </h4>
                             </div>
                         </div>
                     </div>
