@@ -16,6 +16,7 @@ class CovidData extends Component {
                             <div className="">
                             <h5 className="card-title" style={{textAlign: "center"}}> Të konfirmuara </h5>
                             <h4 style={{}}>{this.props.data.confirmed}   <i class="fas fa-user-plus" style={{fontSize: "45px"}}></i>    </h4>
+                                {/* fa fa-spinner  loading logo....*/}
                             </div>
                         </div>
                     </div>
