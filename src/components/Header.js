@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Kosovo from './photos/kosovo.png'
+import Kosovo from '../photos/kosovo.png'
+
 
 class Header extends Component {
     
@@ -12,7 +13,9 @@ class Header extends Component {
                     <img src={Kosovo} alt="Kosovo flag" className="logoks"/> <br />
                     <ul class="nav justify-content-center">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#"><i class="fas fa-home"></i> Ballina</a>
+                            <a className="nav-link active" 
+                            onClick={this.props.handleNews} href="#">
+                                <i class="fas fa-home"></i> Ballina</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">
@@ -20,7 +23,8 @@ class Header extends Component {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#"> 
-                            <i class="fas fa-comment-medical"></i> Keshilla</a>
+                            <i class="fas fa-comment-medical"></i>Keshilla</a>
+                            
                         </li>
                     </ul>
                 </header>
