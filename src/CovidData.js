@@ -9,7 +9,7 @@ class CovidData extends Component {
     render() { 
         return (  
             <div className="divi1">
-                <div className="datat">
+                <div>
                     <h5>Last updated: {this.props.data.lastUpdate}</h5>
 
                     <img src={Death} alt="Deaths" className="Logo"/> 
