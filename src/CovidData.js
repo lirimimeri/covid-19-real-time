@@ -8,7 +8,7 @@ class CovidData extends Component {
     render() { 
         return (  
             <div style={{textAlign: "center"}}>
-                <h5>Last updated: {this.props.data.lastUpdate}</h5>
+                <h5>Last updated: { this.props.isLoading ? <i class="fa fa-spinner"></i> :  this.props.data.lastUpdate}</h5>
                 <div className="row">
                     <div className="col-3">
                         <div className="card">
