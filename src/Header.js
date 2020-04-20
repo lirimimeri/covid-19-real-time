@@ -23,9 +23,6 @@ class Header extends Component {
                             <a className="nav-link" href="#"> 
                             <i class="fas fa-home"></i> Keshilla</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
                     </ul>
                 </header>
             </div>
