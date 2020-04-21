@@ -37,7 +37,7 @@ class Country extends Component {
         <h2>Çfarë është virusi COVID-19?</h2>
       <div className="Home">
           <div className="videoja">
-            <video className="video1" src={covidVideo} width="700px" height="400px"></video>
+            <video autoPlay className="video1" src={covidVideo} width="700px" height="400px"></video>
             <img className="chart1" src={Chart} width="300px" height="400px"></img>
           </div> 
       </div>
