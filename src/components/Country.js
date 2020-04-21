@@ -9,6 +9,10 @@ import covidVideo from '../videos/CoVID-3D.mp4'
 import Chart from '../photos/Chart-bar.jpg'
 
 class Country extends Component {
+  state = {
+    isPlaying: false
+  }
+
   render() {
     return (
       <div className="divikryesor">
@@ -37,13 +41,22 @@ class Country extends Component {
         <h2>Çfarë është virusi COVID-19?</h2>
       <div className="Home">
           <div className="videoja">
-            <video autoPlay className="video1" src={covidVideo} width="700px" height="400px"></video>
+            <video className="video1" ref="vidRef" src={covidVideo} width="700px" height="400px" autoplay/>
+            <button onClick={!this.state.isPlaying ? this.playVideo : this.stopVideo}>Play/pause</button>
             <img className="chart1" src={Chart} width="300px" height="400px"></img>
           </div> 
       </div>
 
       </div>
     );
+  }
+  playVideo =() => {
+    this.refs.vidRef.play();
+    this.setState({isPlaying: true})
+  }
+  stopVideo = () => {
+    this.refs.vidRef.pause();
+    this.setState({isPlaying: false})
   }
 }
 
