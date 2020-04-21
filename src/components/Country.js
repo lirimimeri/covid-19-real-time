@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header";
 import CovidData from "./CovidData";
 import News from "./News";
+import {Player} from "video-react"
+import covidVideo from '../videos/CoVID-3D.mp4'
 
 class Country extends Component {
   render() {
@@ -32,6 +34,7 @@ class Country extends Component {
         handleNews={this.props.handleNews}/>
         <CovidData data={this.props.data} isLoading={this.props.isLoading} />
         {this.props.isNewsClicked && <News />}
+        <video src={covidVideo} width="100px" height="100px"></video>
 
       </div>
     );
