@@ -35,8 +35,12 @@ class Country extends Component {
         <CovidData data={this.props.data} isLoading={this.props.isLoading} />
         {this.props.isNewsClicked && <News />}
         <h2>Çfarë është virusi COVID-19?</h2>
-        <video className="video1" src={covidVideo} width="700px" height="400px"></video>
-        <img className="chart1" src={Chart} width="300px" height="400px"></img>
+      <div className="Home">
+          <div className="videoja">
+            <video autoPlay className="video1" src={covidVideo} width="700px" height="400px"></video>
+            <img className="chart1" src={Chart} width="300px" height="400px"></img>
+          </div> 
+      </div>
 
       </div>
     );
