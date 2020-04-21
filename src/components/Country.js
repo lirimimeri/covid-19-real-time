@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header";
 import CovidData from "./CovidData";
 import News from "./News";
-import {Player} from "video-react"
 import covidVideo from '../videos/CoVID-3D.mp4'
 
 class Country extends Component {
