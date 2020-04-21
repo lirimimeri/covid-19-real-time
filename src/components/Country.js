@@ -6,6 +6,7 @@ import Header from "./Header";
 import CovidData from "./CovidData";
 import News from "./News";
 import covidVideo from '../videos/CoVID-3D.mp4'
+import Chart from '../photos/Chart-bar.jpg'
 
 class Country extends Component {
   render() {
@@ -34,7 +35,8 @@ class Country extends Component {
         <CovidData data={this.props.data} isLoading={this.props.isLoading} />
         {this.props.isNewsClicked && <News />}
         <h2>Çfarë është virusi COVID-19?</h2>
-        <video src={covidVideo} width="720px" height="420px"></video>
+        <video className="video1" src={covidVideo} width="700px" height="400px"></video>
+        <img className="chart1" src={Chart} width="300px" height="400px"></img>
 
       </div>
     );
