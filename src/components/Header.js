@@ -13,15 +13,15 @@ class Header extends Component {
                     <img src={Kosovo} alt="Kosovo flag" className="logoks"/> <br />
                     <ul class="nav justify-content-center">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">
+                            <a className="nav-link active" href="#" style={{fontSize: "25px"}}> 
                                 <i class="fas fa-home"></i> Ballina</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#" style={{fontSize: "25px"}}>
                             <i class="far fa-chart-bar"></i> Statistika</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#"> 
+                            <a className="nav-link" href="#" style={{fontSize: "25px"}}> 
                             <i class="fas fa-comment-medical"></i> Keshilla</a>
                             
                         </li>
