@@ -10,6 +10,7 @@ body {
 
 
 
+
 .row {
   width: 100%;
   height: 200px;
@@ -29,14 +30,8 @@ body {
 }
 
 .kos2020{
-  float: right;
-  margin-right: 25px;
   
-}
-
-.Kosstat{
-  float: right;
-  padding-bottom: 50px;
+  
 }
 
 
