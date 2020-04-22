@@ -44,7 +44,7 @@ class Country extends Component {
       <div className="Home">
           <div className="videoja">
             <video className="video1" onClick={!this.state.isPlaying ? this.playVideo : this.stopVideo} ref="vidRef" src={covidVideo} width="700px" height="400px" autoplay/>
-            <button onClick={!this.state.isPlaying ? this.playVideo : this.stopVideo}>Play/pause</button>
+            <button onClick={!this.state.isPlaying ? this.playVideo : this.stopVideo}><i className="fas fa-play-circle"></i></button>
             <img className="chart1" src={Chart} width="300px" height="400px"></img>
             
           </div> 
