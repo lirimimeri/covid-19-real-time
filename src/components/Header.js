@@ -1,35 +1,39 @@
-import React, { Component } from 'react';
-import './styles.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Kosovo from '../photos/kosovo.png'
-
+import React, { Component } from "react";
+import "./styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Kosovo from "../photos/kosovo.png";
 
 class Header extends Component {
-    
-    render() {
-        return (
-            <div>
-                <header className="h">
-                    <img src={Kosovo} alt="Kosovo flag" className="logoks"/> <br />
-                    <ul class="nav justify-content-center">
-                        <li className="nav-item">
-                            <a className="nav-link active" href="#" style={{fontSize: "25px"}}> 
-                                <i class="fas fa-home"></i> Ballina</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#" style={{fontSize: "25px"}}>
-                            <i class="far fa-chart-bar"></i> Statistika</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#" style={{fontSize: "25px"}}> 
-                            <i class="fas fa-comment-medical"></i> Keshilla</a>
-                            
-                        </li>
-                    </ul>
-                </header>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <header className="h">
+          <img src={Kosovo} alt="Kosovo flag" className="logoks" /> <br />
+          <ul className="nav justify-content-center">
+            <li className="nav-item">
+              <a
+                className="nav-link active"
+                href="/#"
+                style={{ fontSize: "25px" }}
+              >
+                <i className="fas fa-home"></i> Ballina
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#" style={{ fontSize: "25px" }}>
+                <i className="far fa-chart-bar"></i> Statistika
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#" style={{ fontSize: "25px" }}>
+                <i className="fas fa-comment-medical"></i> Keshilla
+              </a>
+            </li>
+          </ul>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default Header;

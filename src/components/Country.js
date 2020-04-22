@@ -9,7 +9,6 @@ import News from "./News";
 import Footer from "./Footer";
 
 class Country extends Component {
-
   render() {
     return (
       <div className="divikryesor">
@@ -17,7 +16,7 @@ class Country extends Component {
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <link
           href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -28,7 +27,7 @@ class Country extends Component {
           href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         ></link>
 
-        {/*  ===============================================================================================================*/}
+        {/*====================================================================*/}
 
         <Header
           isNewsClicked={this.props.isNewsClicked}
@@ -42,7 +41,6 @@ class Country extends Component {
       </div>
     );
   }
-  
 }
 
 export default Country;

@@ -10,23 +10,23 @@ class CovidData extends Component {
         <h5>
           Last updated:{" "}
           {this.props.isLoading ? (
-            <i class="fas fa-spinner fa-spin"></i>
+            <i className="fas fa-spinner fa-spin"></i>
           ) : (
             this.props.data.lastUpdatedAtApify
           )}
         </h5>
-        <div className="row" style={{height: "200px"}}>
+        <div className="row" style={{ height: "200px" }}>
           <div className="col">
             <h5 className="card-title" style={{ textAlign: "center" }}>
               Të konfirmuara
             </h5>
             <h4>
               {this.props.isLoading ? (
-                <i class="fas fa-spinner fa-spin"></i>
+                <i className="fas fa-spinner fa-spin"></i>
               ) : (
                 this.props.data.infected
               )}
-              <i class="fas fa-user-plus" style={{ fontSize: "45px" }}></i>
+              <i className="fas fa-user-plus" style={{ fontSize: "45px" }}></i>
             </h4>
           </div>
 
@@ -37,11 +37,11 @@ class CovidData extends Component {
             </h5>
             <h4 style={{}}>
               {this.props.isLoading ? (
-                <i class="fas fa-spinner fa-spin"></i>
+                <i className="fas fa-spinner fa-spin"></i>
               ) : (
                 this.props.data.recovered
               )}{" "}
-              <i class="far fa-smile-beam" style={{ fontSize: "45px" }}></i>{" "}
+              <i className="far fa-smile-beam" style={{ fontSize: "45px" }}></i>{" "}
             </h4>
           </div>
 
@@ -51,12 +51,12 @@ class CovidData extends Component {
             </h5>
             <h4>
               {this.props.isLoading ? (
-                <i class="fas fa-spinner fa-spin" />
+                <i className="fas fa-spinner fa-spin" />
               ) : (
                 this.props.data.deceased
               )}
               <i
-                class="fas fa-skull-crossbones"
+                className="fas fa-skull-crossbones"
                 style={{ fontSize: "45px" }}
               ></i>
             </h4>
