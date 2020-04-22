@@ -5,13 +5,8 @@ class App extends Component {
   state = {
     Kosovo: [],
     isLoading: true,
-    isNewsClicked: false
   };
 
-  handleNews = () => {
-    this.setState({ isNewsClicked: true });
-  };
-  
   render() {
     return (
       <div>
