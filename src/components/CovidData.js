@@ -6,7 +6,7 @@ import "./styles.css";
 class CovidData extends Component {
   render() {
     return (
-      <div style={{ textAlign: "center" }}>
+      <div>
         <h5>
           Last updated:{" "}
           {this.props.isLoading ? (
@@ -15,63 +15,51 @@ class CovidData extends Component {
             this.props.data.lastUpdate
           )}
         </h5>
-        <div className="row">
-          <div className="col-3">
-            <div className="card">
-              <div className="">
-                <h5 className="card-title" style={{ textAlign: "center" }}>
-                  Të konfirmuara
-                </h5>
-                <h4>
-                  {this.props.isLoading ? (
-                    <i class="fas fa-spinner fa-spin"></i>
-                  ) : (
-                    this.props.data.confirmed
-                  )}
-                  <i class="fas fa-user-plus" style={{ fontSize: "45px" }}></i>
-                </h4>
-              </div>
-            </div>
+        <div className="row" style={{height: "200px"}}>
+          <div className="col">
+            <h5 className="card-title" style={{ textAlign: "center" }}>
+              Të konfirmuara
+            </h5>
+            <h4>
+              {this.props.isLoading ? (
+                <i class="fas fa-spinner fa-spin"></i>
+              ) : (
+                this.props.data.confirmed
+              )}
+              <i class="fas fa-user-plus" style={{ fontSize: "45px" }}></i>
+            </h4>
           </div>
 
-          <div className="col-3">
-            <div className="card">
-              <div className="">
-                <h5 className="card-title" style={{ textAlign: "center" }}>
-                  {" "}
-                  Të shëruar{" "}
-                </h5>
-                <h4 style={{}}>
-                  {this.props.isLoading ? (
-                    <i class="fas fa-spinner fa-spin"></i>
-                  ) : (
-                    this.props.data.recovered
-                  )}{" "}
-                  <i class="far fa-smile-beam" style={{ fontSize: "45px" }}></i>{" "}
-                </h4>
-              </div>
-            </div>
+          <div className="col">
+            <h5 className="card-title" style={{ textAlign: "center" }}>
+              {" "}
+              Të shëruar{" "}
+            </h5>
+            <h4 style={{}}>
+              {this.props.isLoading ? (
+                <i class="fas fa-spinner fa-spin"></i>
+              ) : (
+                this.props.data.recovered
+              )}{" "}
+              <i class="far fa-smile-beam" style={{ fontSize: "45px" }}></i>{" "}
+            </h4>
           </div>
 
-          <div className="col-3">
-            <div className="card">
-              <div className="">
-                <h5 className="card-title" style={{ textAlign: "center" }}>
-                  Të vdekur
-                </h5>
-                <h4>
-                  {this.props.isLoading ? (
-                    <i class="fas fa-spinner fa-spin" />
-                  ) : (
-                    this.props.data.deaths
-                  )}
-                  <i
-                    class="fas fa-skull-crossbones"
-                    style={{ fontSize: "45px" }}>
-                  </i>
-                </h4>
-              </div>
-            </div>
+          <div className="col">
+            <h5 className="card-title" style={{ textAlign: "center" }}>
+              Të vdekur
+            </h5>
+            <h4>
+              {this.props.isLoading ? (
+                <i class="fas fa-spinner fa-spin" />
+              ) : (
+                this.props.data.deaths
+              )}
+              <i
+                class="fas fa-skull-crossbones"
+                style={{ fontSize: "45px" }}
+              ></i>
+            </h4>
           </div>
         </div>
       </div>
