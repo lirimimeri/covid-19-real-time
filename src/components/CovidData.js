@@ -12,7 +12,7 @@ class CovidData extends Component {
           {this.props.isLoading ? (
             <i class="fas fa-spinner fa-spin"></i>
           ) : (
-            this.props.data.lastUpdate
+            this.props.data.lastUpdatedAtApify
           )}
         </h5>
         <div className="row" style={{height: "200px"}}>
@@ -24,7 +24,7 @@ class CovidData extends Component {
               {this.props.isLoading ? (
                 <i class="fas fa-spinner fa-spin"></i>
               ) : (
-                this.props.data.confirmed
+                this.props.data.infected
               )}
               <i class="fas fa-user-plus" style={{ fontSize: "45px" }}></i>
             </h4>
@@ -53,7 +53,7 @@ class CovidData extends Component {
               {this.props.isLoading ? (
                 <i class="fas fa-spinner fa-spin" />
               ) : (
-                this.props.data.deaths
+                this.props.data.deceased
               )}
               <i
                 class="fas fa-skull-crossbones"
