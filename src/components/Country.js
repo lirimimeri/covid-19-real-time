@@ -64,18 +64,9 @@ class Country extends Component {
             </div>
             </div> 
 
-            <div className="lajmet">
 
 
-            </div>
-
-
-            <div className="stat1">
-
-        
-        
-
-             </div>
+           
 
         </div>
 
