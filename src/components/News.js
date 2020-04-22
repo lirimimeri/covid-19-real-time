@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import ReactPlayer from 'react-player'
 import Statistika from "../photos/Chart.jpg";
 import covidVideo from "../videos/CoVID-3D.mp4";
 import Chart from "../photos/Chart-bar.jpg";
@@ -31,6 +32,7 @@ class News extends Component {
               Në videon më poshtë mund të shikoni se çfarë lloj virusi është ky
               dhe si mund të shpërndahet
             </h4>
+            {/* <ReactPlayer url="https://www.youtube.com/watch?v=PSnSo9kYlH4"></ReactPlayer> */}
             <video className="video1"
               ref="vidRef"
               src={covidVideo}
@@ -88,6 +90,30 @@ class News extends Component {
             height="350px"/>
           </div>
         </div>
+    
+     <div className="Keshillat">
+          <div className="advice"> 
+              <i className="fas fa-hands-wash fa-3x"></i>
+                  <h5 className="keshilla"> Pastroni duart shpesh me ujë dhe sapun ose perdorni ndonjë dezinfektues me bazë të lartë të alkoolit. </h5>
+      </div>
+          <div className="advice">
+          <i class="fas fa-head-side-mask fa-3x"></i>
+                <h5 className="keshilla"> Mos dilni pa maskë dhe dorëza.</h5>
+          </div>
+
+          <div className="advice">
+          <i class="fas fa-house-user fa-3x"></i>
+                <h5 className="keshilla">Shmangni daljet e panevojshme!</h5>
+             </div>
+          </div>
+
+
+      <div className="Keshillat">
+        <div className="advice">
+          
+        </div>
+        
+      </div>
       </div>
     );
   }

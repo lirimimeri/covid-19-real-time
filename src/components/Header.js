@@ -22,7 +22,7 @@ class Header extends Component {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#"> 
-                            <i class="fas fa-comment-medical"></i>Keshilla</a>
+                            <i class="fas fa-comment-medical"></i> Keshilla</a>
                             
                         </li>
                     </ul>
