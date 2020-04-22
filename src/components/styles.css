@@ -8,6 +8,8 @@ body {
     background-color: #fbfbfb;
 }
 
+
+
 .row {
   width: 100%;
   height: 200px;
@@ -26,24 +28,37 @@ body {
   right: 0;  */
 }
 
-.divihome{
-  width: 700px;
-  height: 400px;
-  border-radius: 20px;
+.kos2020{
+  float: right;
+  margin-right: 25px;
+  
+}
+
+.Kosstat{
+  float: right;
+  padding-bottom: 50px;
+}
+
+
+.videoja{
+
   overflow: hidden;
   position: relative;
-}
+  
+ }
+
+
 .video1{
   /* border: 4px solid lightblue; */
   border-radius: 20px;
- 
+  position: relative;
   left: 0;
   top: 0;
   opacity: 1;
 }
 
-.chart1{
-  float: right;
+.stat1{
+  background-color: red;
 }
 
 .card {
@@ -108,9 +123,4 @@ h5 {
   color: orange;
 }
 
-.h {
-  position: fixed;
-  z-index: 10;
- width: 70%;
-}
   
