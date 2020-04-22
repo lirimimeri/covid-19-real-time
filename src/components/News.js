@@ -4,10 +4,14 @@ import corona3 from "../photos/corona3.jpg";
 import corona4 from "../photos/corona4.jpg";
 
 class News extends Component {
+  constructor(props) {
+    super(props)
+    this.vidRef = React.createRef()
+  }
   state = {
     isPlaying: false,
   };
-  vidRef = React.createRef()
+  
   render() {
     return (
       <div>
@@ -118,11 +122,11 @@ class News extends Component {
     );
   }
   playVideo = () => {
-    this.refs.vidRef.play();
+    this.vidRef.current.play();
     this.setState({ isPlaying: true });
   };
   stopVideo = () => {
-    this.refs.vidRef.pause();
+    this.vidRef.current.pause();
     this.setState({ isPlaying: false });
   };
 }
