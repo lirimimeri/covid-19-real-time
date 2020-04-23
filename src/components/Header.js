@@ -14,18 +14,18 @@ class Header extends Component {
               <a
                 className="nav-link active"
                 href="/#"
-                style={{ fontSize: "25px" }}
+                style={{ fontSize: "20px" }}
               >
                 <i className="fas fa-home"></i> Ballina
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#" style={{ fontSize: "25px" }}>
+              <a className="nav-link" href="/#" style={{ fontSize: "20px" }}>
                 <i className="far fa-chart-bar"></i> Statistika
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#" style={{ fontSize: "25px" }}>
+              <a className="nav-link" href="/#" style={{ fontSize: "20px" }}>
                 <i className="fas fa-comment-medical"></i> Keshilla
               </a>
             </li>
