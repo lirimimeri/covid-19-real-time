@@ -18,17 +18,7 @@ class News extends Component {
     return (
       <div>
         <div className="row" style={{ height: "auto" }}>
-          <div className="col" style={{ textAlign: "right" }}>
-            <h2 style={{fontWeight: "lighter"}}>Çfarë është virusi COVID-19?</h2>
-            <h5>
-              {" "}
-              Koronaviruset janë familja e viruseve të cilat shkaktojnë sëmundje
-              nga një rrufë e lehtë deri në sëmundje më të rënda si Sindroma
-              Respiratore e Lindjes së Mesme (Middle East Respiratory Syndrome
-              MERS) dhe Sindroma e Rëndë Respiratore Akute (Severe Acute
-              Respiratory Syndrome SARS).
-            </h5>
-          </div>
+          <div className="col" style={{ textAlign: "left" }}>
           <div className="col">
             <h4 style={{fontWeight: "lighter"}}>
               Në videon më poshtë mund të shikoni se çfarë lloj virusi është ky
@@ -46,6 +36,30 @@ class News extends Component {
             >
               <i className="fas fa-play-circle"></i>
             </button>
+          </div>
+            </div>
+        
+        </div>
+        <div className="row">
+          <div className="col" style={{ textAlign: "left" }}>
+            <h2 style={{fontWeight: "lighter"}}>
+              Cfarë është virusi CoVID-19 ?
+            </h2>
+            <h5>
+              {" "}
+              Koronaviruset janë familja e viruseve të cilat shkaktojnë sëmundje
+              nga një rrufë e lehtë deri në sëmundje më të rënda si Sindroma
+              Respiratore e Lindjes së Mesme (Middle East Respiratory Syndrome
+              MERS) dhe Sindroma e Rëndë Respiratore Akute (Severe Acute
+              Respiratory Syndrome SARS).
+            </h5>
+          </div>
+          <div className="col">
+            <img className="fotoballina"
+            src={corona3} 
+            // width="793px" 
+            // height="356px" 
+            alt="Foto e virusit"/>
           </div>
         </div>
 
