@@ -7,7 +7,7 @@ body {
 }
 
 header.h{
-background-color: #a0b9c5;
+background-color: #90aebb;
 font-weight: lighter;
  position: fixed;
 z-index: 10;
@@ -16,8 +16,8 @@ height: auto;
 }
 
 .koha{
-  color: coral;
-  text-align: center;
+  color: gainsboro;
+  text-align: right;
   margin: 0;
  
 }
@@ -99,7 +99,7 @@ h5,h6{
 }
 
 ul.nav a:hover {
-  color: black !important;
+  color:  rgb(56, 81, 90) !important;
 }
 
 header {
