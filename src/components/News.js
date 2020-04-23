@@ -4,6 +4,7 @@ import corona3 from "../photos/corona3.jpg";
 import corona4 from "../photos/corona4.jpg";
 import dogs from "../photos/dogs.png";
 import cough from "../photos/cough.jpg";
+import kostat from "../photos/kostat.jpg";
 
 class News extends Component {
   constructor(props) {
@@ -153,7 +154,15 @@ class News extends Component {
             <i className="fas fa-head-side-cough-slash fa-3x"></i>
             <h5 style={{color: "#686464"}}> Kujdes kur tështini ose kolliteni, mbulojeni gojen me mëngë ose pallomë.</h5>
           </div>
-          
+        </div>
+
+        <div className="row">
+          <div className="col">
+            <h5 style={{textAlign:"left", color:"gainsboro"}}>Statistikat deri me daten 23 Prill 2020 :</h5>
+            <img src={kostat} style={{borderRadius:"10px"}}></img>
+
+          </div>
+
         </div>
           
       </div>
