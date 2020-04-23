@@ -3,6 +3,7 @@ import covidVideo from "../videos/CoVID-3D.mp4";
 import corona3 from "../photos/corona3.jpg";
 import corona4 from "../photos/corona4.jpg";
 import dogs from "../photos/dogs.png";
+import cough from "../photos/cough.jpg";
 
 class News extends Component {
   constructor(props) {
@@ -50,13 +51,14 @@ class News extends Component {
 
         <div className="row">
           <div className="col">
-            <img 
-              src={corona3} 
+            <img className="fotoballina"
+              src={cough} 
               width="500px"
-              height="280px" 
-              alt="Foto e virusit"/>
+              height="300px" 
+              alt="Foto e virusit"
+              />
           </div>
-          <div className="col" style={{ textAlign: "left" }}>
+          <div className="col" style={{ textAlign: "center" }}>
             <h2 style={{fontWeight: "lighter"}}>
               Cilat janë simptomat e një personi të infektuar me koronavirus?
             </h2>
@@ -73,7 +75,7 @@ class News extends Component {
         </div>
 
         <div className="row">
-          <div className="col" style={{ textAlign: "right" }}>
+          <div className="col" style={{ textAlign: "left" }}>
             <h2 style={{fontWeight: "lighter"}}>
               A mund të infektohen njerëzit me koronavirusin e ri ku si burim
               infektimi janë kafshët?
@@ -89,7 +91,7 @@ class News extends Component {
             </h5>
           </div>
           <div className="col">
-            <img 
+            <img className="fotoballina"
             src={dogs} 
             // width="793px" 
             // height="356px" 

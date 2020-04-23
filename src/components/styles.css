@@ -10,7 +10,9 @@ header.h{
 background-color: #a0b9c5;
 font-weight: lighter;
 }
-
+.fotoballina{
+  border-radius: 100px;
+}
 .Keshillat {
   display: flex;
 }
