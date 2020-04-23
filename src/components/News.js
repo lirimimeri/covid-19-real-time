@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import covidVideo from "../videos/CoVID-3D.mp4";
 import corona3 from "../photos/corona3.jpg";
 import corona4 from "../photos/corona4.jpg";
+import dogs from "../photos/dogs.png";
 
 class News extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class News extends Component {
       <div>
         <div className="row" style={{ height: "auto" }}>
           <div className="col" style={{ textAlign: "right" }}>
-            <h2>Çfarë është virusi COVID-19?</h2>
+            <h2 style={{fontWeight: "lighter"}}>Çfarë është virusi COVID-19?</h2>
             <h5>
               {" "}
               Koronaviruset janë familja e viruseve të cilat shkaktojnë sëmundje
@@ -28,7 +29,7 @@ class News extends Component {
             </h5>
           </div>
           <div className="col">
-            <h4>
+            <h4 style={{fontWeight: "lighter"}}>
               Në videon më poshtë mund të shikoni se çfarë lloj virusi është ky
               dhe si mund të shpërndahet
             </h4>
@@ -51,12 +52,12 @@ class News extends Component {
           <div className="col">
             <img 
               src={corona3} 
-              width="450px"
-              height="350px" 
+              width="500px"
+              height="280px" 
               alt="Foto e virusit"/>
           </div>
           <div className="col" style={{ textAlign: "left" }}>
-            <h2>
+            <h2 style={{fontWeight: "lighter"}}>
               Cilat janë simptomat e një personi të infektuar me koronavirus?
             </h2>
             <h5>
@@ -73,7 +74,7 @@ class News extends Component {
 
         <div className="row">
           <div className="col" style={{ textAlign: "right" }}>
-            <h2>
+            <h2 style={{fontWeight: "lighter"}}>
               A mund të infektohen njerëzit me koronavirusin e ri ku si burim
               infektimi janë kafshët?
             </h2>
@@ -89,9 +90,9 @@ class News extends Component {
           </div>
           <div className="col">
             <img 
-            src={corona4} 
-            width="450px" 
-            height="350px" 
+            src={dogs} 
+            // width="793px" 
+            // height="356px" 
             alt="Foto e virusit"/>
           </div>
         </div>
@@ -110,7 +111,7 @@ class News extends Component {
           </div>
           <div className="col">
             <i className="fas fa-head-side-mask fa-3x"></i>
-            <h5> Mos dilni pa maskë dhe dorëza.</h5>
+            <h5> Mos dilni pa maskë dhe dorëza,shmangni prekjet e fytyrës me dorë.</h5>
           </div>
 
           <div className="col">
