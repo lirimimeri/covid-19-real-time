@@ -6,6 +6,10 @@ body {
   background-color: #fbfbfb;
 }
 
+header.h{
+background-color: #a0b9c5;
+}
+
 .Keshillat {
   display: flex;
 }
@@ -22,6 +26,10 @@ body {
 
 .keshilla {
   padding-top: 50px;
+}
+
+h5{
+  font-weight: 330 !important;
 }
 
 .row {
