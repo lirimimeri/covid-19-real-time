@@ -17,7 +17,7 @@ class News extends Component {
   render() {
     return (
       <div>
-        <div className="row" style={{ height: "auto" }}>
+        <div className="row" style={{ height: "auto" }} id="ballina">
           <div className="col" style={{ textAlign: "left" }}>
           <div className="col">
             <h4 style={{fontWeight: "lighter"}}>
@@ -116,7 +116,7 @@ class News extends Component {
         </div>
 
         <div
-          className="row"
+          className="row" id="keshillat"
           style={{ paddingTop: "30px", backgroundColor: "#d3d3d3" }}
         >
           <div className="col">
