@@ -9,9 +9,22 @@ body {
 header.h{
 background-color: #a0b9c5;
 font-weight: lighter;
+ position: fixed;
+z-index: 10;
+width: 70%; 
+height: auto;
 }
+
+.koha{
+  color: coral;
+  text-align: center;
+  margin: 0;
+ 
+}
+
+
 .fotoballina{
-  border-radius: 100px;
+  border-radius: 30px;
 }
 .Keshillat {
   display: flex;
@@ -48,6 +61,7 @@ h5,h6{
 .row {
   width: 100%;
   height: auto;
+  padding-top: 30px;
   /* background-image: url(photos/background.jpg); */
   background-color: rgb(56, 81, 90);
 
@@ -63,10 +77,11 @@ h5,h6{
   right: 0;  */
 }
 .video1 {
+  padding-top: 10px;
   max-width: 700px;
   max-height: 620px;
   border-radius: 15px;
-
+  cursor: pointer;
   min-width: 100px;
   min-height: 60px;
 }
@@ -146,3 +161,18 @@ h3 {
   text-align: center;
   align-items: center;
 }
+
+.btnPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+

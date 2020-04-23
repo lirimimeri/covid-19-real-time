@@ -24,24 +24,26 @@ class News extends Component {
               Në videon më poshtë mund të shikoni se çfarë lloj virusi është ky
               dhe si mund të shpërndahet
             </h4>
-            {/* <ReactPlayer url="https://www.youtube.com/watch?v=PSnSo9kYlH4"></ReactPlayer> */}
+            
             <video
               className="video1"
               ref={this.vidRef}
               src={covidVideo}
               onClick={!this.state.isPlaying ? this.playVideo : this.stopVideo}
             />
-            <button
-              onClick={!this.state.isPlaying ? this.playVideo : this.stopVideo}
+            <button style={{padding: "5px 15px 5px 15px", border: "none", backgroundColor: "coral", borderRadius:"10px", textAlign: "center"}}
+              onClick={!this.state.isPlaying ? (this.playVideo) : this.stopVideo}
+              className="btnPlay"
+              id="p2"
             >
-              <i className="fas fa-play-circle"></i>
+              <i className="fas fa-play fa-2x" />
             </button>
           </div>
             </div>
         
         </div>
         <div className="row">
-          <div className="col" style={{ textAlign: "left" }}>
+          <div className="col" style={{ textAlign: "right" }}>
             <h2 style={{fontWeight: "lighter"}}>
               Cfarë është virusi CoVID-19 ?
             </h2>
@@ -72,7 +74,7 @@ class News extends Component {
               alt="Foto e virusit"
               />
           </div>
-          <div className="col" style={{ textAlign: "center" }}>
+          <div className="col" style={{ textAlign: "left" }}>
             <h2 style={{fontWeight: "lighter"}}>
               Cilat janë simptomat e një personi të infektuar me koronavirus?
             </h2>
@@ -89,7 +91,7 @@ class News extends Component {
         </div>
 
         <div className="row">
-          <div className="col" style={{ textAlign: "left" }}>
+          <div className="col" style={{ textAlign: "right" }}>
             <h2 style={{fontWeight: "lighter"}}>
               A mund të infektohen njerëzit me koronavirusin e ri ku si burim
               infektimi janë kafshët?
@@ -119,7 +121,7 @@ class News extends Component {
         >
           <div className="col">
             <i className="fas fa-hands-wash fa-3x"></i>
-            <h5>
+            <h5 style={{color: "#686464"}}>
               {" "}
               Pastroni duart shpesh me ujë dhe sapun ose perdorni ndonjë
               dezinfektues me bazë të lartë të alkoolit.{" "}
@@ -127,29 +129,29 @@ class News extends Component {
           </div>
           <div className="col">
             <i className="fas fa-head-side-mask fa-3x"></i>
-            <h5> Mos dilni pa maskë dhe dorëza,shmangni prekjet e fytyrës me dorë.</h5>
+            <h5 style={{color: "#686464"}}> Mos dilni pa maskë dhe dorëza,shmangni prekjet e fytyrës me dorë.</h5>
           </div>
 
           <div className="col">
             <i className="fas fa-house-user fa-3x"></i>
-            <h5>Shmangni daljet e panevojshme! Të gjithë po qëndrojmë në shtëpi, edhe ti #rriNshpi !</h5>
+            <h5 style={{color: "#686464"}}>Shmangni daljet e panevojshme! Të gjithë po qëndrojmë në shtëpi, edhe ti #rriNshpi !</h5>
           </div>
         </div>
         <div className="row" style={{ paddingTop: "30px", backgroundColor: "#d3d3d3" }}>
         <div className="col">
             <i className="fas fa-people-arrows fa-3x"></i>
-            <h5>
+            <h5 style={{color: "#686464"}}>
               {" "}
               Mbani distancën e nevojshme nga njëri-tjetri!{" "}
             </h5>
           </div>
           <div className="col">
             <i className="fas fa-handshake-slash fa-3x"></i>
-            <h5> Evitoni dorë-shtrëngimet! Provoni përshëndetjet tjera, është argëtuese!</h5>
+            <h5 style={{color: "#686464"}}> Evitoni dorë-shtrëngimet! Provoni përshëndetjet tjera, është argëtuese!</h5>
           </div>
           <div className="col">
             <i className="fas fa-head-side-cough-slash fa-3x"></i>
-            <h5> Kujdes kur tështini ose kolliteni, mbulojeni gojen me mëngë ose pallomë.</h5>
+            <h5 style={{color: "#686464"}}> Kujdes kur tështini ose kolliteni, mbulojeni gojen me mëngë ose pallomë.</h5>
           </div>
           
         </div>
@@ -160,10 +162,12 @@ class News extends Component {
   playVideo = () => {
     this.vidRef.current.play();
     this.setState({ isPlaying: true });
+    document.getElementById("p2").style.display = "none";
   };
   stopVideo = () => {
     this.vidRef.current.pause();
     this.setState({ isPlaying: false });
+    document.getElementById("p2").style.display = "block";
   };
 }
 

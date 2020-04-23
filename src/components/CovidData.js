@@ -6,15 +6,7 @@ import "./styles.css";
 class CovidData extends Component {
   render() {
     return (
-      <div>
-        <h5>
-          Last updated:{" "}
-          {this.props.isLoading ? (
-            <i className="fas fa-spinner fa-spin"></i>
-          ) : (
-            this.props.data.lastUpdatedAtApify
-          )}
-        </h5>
+      <div style={{paddingTop: "25px"}}>
         <div className="row" style={{ height: "200px" }}>
           <div className="col">
             <h5 className="card-title" style={{ textAlign: "center" }}>
@@ -44,6 +36,7 @@ class CovidData extends Component {
               <i className="far fa-smile-beam" style={{ fontSize: "45px" }}></i>{" "}
             </h4>
           </div>
+          
 
           <div className="col">
             <h5 className="card-title" style={{ textAlign: "center" }}>
@@ -62,6 +55,14 @@ class CovidData extends Component {
             </h4>
           </div>
         </div>
+        <div style={{backgroundColor: "rgb(56, 81, 90)"}}>
+          <div>
+            <h6 className="koha">
+              Përditësimi i fundit : 
+              {this.props.isLoading ? <i className="fas fa-spinner fa-spin"></i> : this.props.data.lastUpdatedAtApify}
+            </h6>
+            </div>
+          </div>
       </div>
     );
   }
