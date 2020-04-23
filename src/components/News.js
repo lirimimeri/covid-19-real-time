@@ -4,48 +4,60 @@ import corona3 from "../photos/corona3.jpg";
 import corona4 from "../photos/corona4.jpg";
 import dogs from "../photos/dogs.png";
 import cough from "../photos/cough.jpg";
-import kostat from "../photos/kostat.jpg";
+
+import Keshilla from "./Keshilla";
+import Statistika from "./Statistika";
 
 class News extends Component {
   constructor(props) {
-    super(props)
-    this.vidRef = React.createRef()
+    super(props);
+    this.vidRef = React.createRef();
   }
   state = {
     isPlaying: false,
   };
-  
+
   render() {
     return (
       <div>
         <div className="row" style={{ height: "auto" }} id="ballina">
           <div className="col" style={{ textAlign: "left" }}>
-          <div className="col">
-            <h4 style={{fontWeight: "lighter"}}>
-              Në videon më poshtë mund të shikoni se çfarë lloj virusi është ky
-              dhe si mund të shpërndahet
-            </h4>
-            
-            <video
-              className="video1"
-              ref={this.vidRef}
-              src={covidVideo}
-              onClick={!this.state.isPlaying ? this.playVideo : this.stopVideo}
-            />
-            <button style={{padding: "5px 15px 5px 15px", border: "none", backgroundColor: "coral", borderRadius:"10px", textAlign: "center"}}
-              onClick={!this.state.isPlaying ? (this.playVideo) : this.stopVideo}
-              className="btnPlay"
-              id="p2"
-            >
-              <i className="fas fa-play fa-2x" />
-            </button>
-          </div>
+            <div className="col">
+              <h4 style={{ fontWeight: "lighter" }}>
+                Në videon më poshtë mund të shikoni se çfarë lloj virusi është
+                ky dhe si mund të shpërndahet
+              </h4>
+
+              <video
+                className="video1"
+                ref={this.vidRef}
+                src={covidVideo}
+                onClick={
+                  !this.state.isPlaying ? this.playVideo : this.stopVideo
+                }
+              />
+              <button
+                style={{
+                  padding: "5px 15px 5px 15px",
+                  border: "none",
+                  backgroundColor: "coral",
+                  borderRadius: "10px",
+                  textAlign: "center",
+                }}
+                onClick={
+                  !this.state.isPlaying ? this.playVideo : this.stopVideo
+                }
+                className="btnPlay"
+                id="p2"
+              >
+                <i className="fas fa-play fa-2x" />
+              </button>
             </div>
-        
+          </div>
         </div>
         <div className="row">
           <div className="col" style={{ textAlign: "right" }}>
-            <h2 style={{fontWeight: "lighter"}}>
+            <h2 style={{ fontWeight: "lighter" }}>
               Cfarë është virusi CoVID-19 ?
             </h2>
             <h5>
@@ -58,25 +70,28 @@ class News extends Component {
             </h5>
           </div>
           <div className="col">
-            <img className="fotoballina"
-            src={corona3} 
-            // width="793px" 
-            // height="356px" 
-            alt="Foto e virusit"/>
+            <img
+              className="fotoballina"
+              src={corona3}
+              // width="793px"
+              // height="356px"
+              alt="Foto e virusit"
+            />
           </div>
         </div>
 
         <div className="row">
           <div className="col">
-            <img className="fotoballina"
-              src={cough} 
+            <img
+              className="fotoballina"
+              src={cough}
               width="500px"
-              height="300px" 
+              height="300px"
               alt="Foto e virusit"
-              />
+            />
           </div>
           <div className="col" style={{ textAlign: "left" }}>
-            <h2 style={{fontWeight: "lighter"}}>
+            <h2 style={{ fontWeight: "lighter" }}>
               Cilat janë simptomat e një personi të infektuar me koronavirus?
             </h2>
             <h5>
@@ -93,7 +108,7 @@ class News extends Component {
 
         <div className="row">
           <div className="col" style={{ textAlign: "right" }}>
-            <h2 style={{fontWeight: "lighter"}}>
+            <h2 style={{ fontWeight: "lighter" }}>
               A mund të infektohen njerëzit me koronavirusin e ri ku si burim
               infektimi janë kafshët?
             </h2>
@@ -108,63 +123,18 @@ class News extends Component {
             </h5>
           </div>
           <div className="col">
-            <img className="fotoballina"
-            src={dogs} 
-            // width="793px" 
-            // height="356px" 
-            alt="Foto e virusit"/>
+            <img
+              className="fotoballina"
+              src={dogs}
+              // width="793px"
+              // height="356px"
+              alt="Foto e virusit"
+            />
           </div>
         </div>
 
-        <div
-          className="row" id="keshillat"
-          style={{ paddingTop: "30px", backgroundColor: "#d3d3d3" }}
-        >
-          <div className="col">
-            <i className="fas fa-hands-wash fa-3x"></i>
-            <h5 style={{color: "#686464"}}>
-              {" "}
-              Pastroni duart shpesh me ujë dhe sapun ose perdorni ndonjë
-              dezinfektues me bazë të lartë të alkoolit.{" "}
-            </h5>
-          </div>
-          <div className="col">
-            <i className="fas fa-head-side-mask fa-3x"></i>
-            <h5 style={{color: "#686464"}}> Mos dilni pa maskë dhe dorëza,shmangni prekjet e fytyrës me dorë.</h5>
-          </div>
-
-          <div className="col">
-            <i className="fas fa-house-user fa-3x"></i>
-            <h5 style={{color: "#686464"}}>Shmangni daljet e panevojshme! Të gjithë po qëndrojmë në shtëpi, edhe ti #rriNshpi !</h5>
-          </div>
-        </div>
-        <div className="row" style={{ paddingTop: "30px", backgroundColor: "#d3d3d3" }}>
-        <div className="col">
-            <i className="fas fa-people-arrows fa-3x"></i>
-            <h5 style={{color: "#686464"}}>
-              {" "}
-              Mbani distancën e nevojshme nga njëri-tjetri!{" "}
-            </h5>
-          </div>
-          <div className="col">
-            <i className="fas fa-handshake-slash fa-3x"></i>
-            <h5 style={{color: "#686464"}}> Evitoni dorë-shtrëngimet! Provoni përshëndetjet tjera, është argëtuese!</h5>
-          </div>
-          <div className="col">
-            <i className="fas fa-head-side-cough-slash fa-3x"></i>
-            <h5 style={{color: "#686464"}}> Kujdes kur tështini ose kolliteni, mbulojeni gojen me mëngë ose pallomë.</h5>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col">
-            <h5 style={{textAlign:"left", color:"gainsboro"}}>Statistikat deri me daten 23 Prill 2020 :</h5>
-            <img src={kostat} style={{borderRadius:"10px"}}></img>
-
-          </div>
-
-        </div>
-          
+        <Keshilla id="keshilla"/>
+        <Statistika id="statistika"/>
       </div>
     );
   }

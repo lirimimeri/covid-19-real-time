@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Kosovo from "../photos/kosovo.png";
-import $ from "jquery";
+
 
 class Header extends Component {
+
   render() {
     return (
       <div>
@@ -13,7 +14,7 @@ class Header extends Component {
           <ul className="nav justify-content-center" >
             <li className="nav-item" >
               <a
-                className="nav-link active" id="Home"
+                className="nav-link active" 
                 href="/#" 
                 style={{ fontSize: "18px" }}
               >
@@ -26,7 +27,7 @@ class Header extends Component {
               </a>
             </li>
             <li className="nav-item" >
-              <a className="nav-link" id="Advice"  href="/#" style={{ fontSize: "18px" }}>
+              <a className="nav-link"  href="/#" style={{ fontSize: "18px" }}>
                 <i className="fas fa-comment-medical"></i> Këshilla
               </a>
             </li>
@@ -38,16 +39,6 @@ class Header extends Component {
 }
 
 
-$("#Home").click(function() {
-  $('html, body').animate({
-      scrollTop: $("#ballina").offset().top
-  }, 2000);
-});
 
-$("#Advice").click(function() {
-  $('html, body').animate({
-      scrollTop: $("#keshillat").offset().top
-  }, 2000);
-});
 
 export default Header;

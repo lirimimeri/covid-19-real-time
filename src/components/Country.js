@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import $ from "jquery";
+
 
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
